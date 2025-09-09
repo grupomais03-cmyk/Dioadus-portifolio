@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- LINK CSS icons-->
+     <link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'>
+     <link rel="stylesheet" href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css'>
+
+    <!-- LINK CSS-->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Dioadus</title>
+</head>
+<body>
+    
+    <!-- HEADER DESIGN-->
+     <header class="header">
+        <!--Logo da empresa-->
+        <a href="../index.html" class="logo">Dioadus</a>
+        <!-- Menu_icon-->
+         <i class="bx bx-menu" id="menu-icon"></i>
+        <!-- Menu-->
+         <nav class="navbar">
+            <a href="../index.html" class="active">Home</a>
+            <a href="sobre_nos.html">Sobre Nós</a>
+            <a href="#cursos">Cursos</a>
+            <a href="#">Login</a>
+         </nav>
+     </header>
+
+     <!-- Cursos -->
+      <section class="cursos" id="nossos_cursos">
+        <div id="beginner-cursos" class="curso">
+            <div class="cursos-img">
+                <img src="img/Beginner.png" alt="">
+            </div>
+
+            <div class="cursos-content">
+                <h2 class="heading">Beginner</h2>
+                <h3>Teacher <span>Dianduala Agostinho António</span></h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, alias aliquam? Vel illum adipisci porro, corporis pariatur totam harum fuga nam. Magnam expedita beatae qui, repellendus explicabo libero. Delectus odit quaerat officia fuga cumque culpa quod expedita, excepturi earum reiciendis consectetur animi velit impedit, ad voluptas.</p>
+                <button onclick="enviarWhatsApp('Beginner´s Level')" class="btn">Aderir</button>
+            </div>
+        </div>
+        <div id="pre-elementary-cursos" class="curso">
+            <div class="cursos-img">
+                <img src="img/Pre-Elementary.png" alt="">
+            </div>
+
+            <div class="cursos-content">
+                <h2 class="heading">Pre-Elementary´s Level</h2>
+                <h3>Teacher <span>Dianduala Agostinho António</span></h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, alias aliquam? Vel illum adipisci porro, corporis pariatur totam harum fuga nam. Magnam expedita beatae qui, repellendus explicabo libero. Delectus odit quaerat officia fuga cumque culpa quod expedita, excepturi earum reiciendis consectetur animi velit impedit, ad voluptas.</p>
+                <button onclick="enviarWhatsApp('Pré-Elementary Level')" class="btn">Aderir</button>
+            </div>
+        </div>
+
+        <div id="elementary-cursos" class="curso">
+            <div class="cursos-img">
+                <img src="img/Elementary.png" alt="">
+            </div>
+
+            <div class="cursos-content">
+                <h2 class="heading">Elementary´s Level</h2>
+                <h3>Teacher <span>Dianduala Agostinho António</span></h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, alias aliquam? Vel illum adipisci porro, corporis pariatur totam harum fuga nam. Magnam expedita beatae qui, repellendus explicabo libero. Delectus odit quaerat officia fuga cumque culpa quod expedita, excepturi earum reiciendis consectetur animi velit impedit, ad voluptas.</p>
+                <button onclick="enviarWhatsApp('Elementary Level')" class="btn">Aderir</button>
+            </div>
+        </div>
+        
+        <div id="advanced-cursos" class="curso">
+            <div class="cursos-img">
+                <img src="img/Advanced.png" alt="">
+            </div>
+
+            <div class="cursos-content">
+                <h2 class="heading">Advanced´s Level</h2>
+                <h3>Teacher <span>Dianduala Agostinho António</span></h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, alias aliquam? Vel illum adipisci porro, corporis pariatur totam harum fuga nam. Magnam expedita beatae qui, repellendus explicabo libero. Delectus odit quaerat officia fuga cumque culpa quod expedita, excepturi earum reiciendis consectetur animi velit impedit, ad voluptas.</p>
+                <button onclick="enviarWhatsApp('Advanced´s Level')" class="btn">Aderir</button>
+            </div>
+        </div>
+     </section>
+
+     <!--Sessão Cursos Design-->
+     <section class="services-cursos" id="cursos">
+        <h2 class="heading">Nossos Cursos</h2>
+
+        <div class="services-cursos-container">
+            <div class="services-cursos-box">
+               <i class="fa-solid fa-book-open"></i>
+                <h3>Pre-Elementary´s Level</h3>
+                <p>Dê o próximo passo no seu inglês!
+                    Curso Pre-Elementary: depois do básico, vem a evolução.
+                    Amplie vocabulário e monte frases mais completas!</p>
+                <a href="cursos.html?curso=pre-elementary" class="btn">Cursar</a>
+            </div>
+
+            <div class="services-cursos-box">
+               <i class="fa-solid fa-book-open-reader"></i>
+               <h3>Elementary´s Level</h3>
+               <p>Chegou a hora de consolidar seu inglês!
+                Curso Elementary: para quem já tem noção básica.
+                Desenvolva diálogos mais longos e naturais!</p>
+                <a href="cursos.html?curso=elementary" class="btn">Cursar</a>
+            </div>
+
+            <div class="services-cursos-box">
+               <i class="fa-solid fa-book-tanakh"></i>
+                <h3>Advanced´s Level</h3>
+                <p>O topo da sua jornada no inglês chegou!
+                    Curso Advanced: comunicação em alto nível.
+                    Converse com fluência e naturalidade em qualquer contexto!</p>
+                <a href="cursos.html?curso=advanced" class="btn">Cursar</a>
+            </div>
+        </div>
+     </section>
+
+    <!-- Nossas Aulas -->
+     <section class="categoria" id="portifolio">
+        <h2 class="heading">Nossa Categoria de Aulas</h2>
+
+        <div class="categoria-container">
+            <div class="categoria-box">
+                <img src="img/3.png" alt="">
+                <div class="categoria-layer">
+                    <h4>Aulas Online</h4>
+                    <p>Aprenda inglês online com flexibilidade, praticidade e foco na sua fluência!</p>
+                    <a href="#"><i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+            <div class="categoria-box">
+                <img src="img/3.png" alt="">
+                <div class="categoria-layer">
+                    <h4>Aulas Domicíliar</h4>
+                    <p>Aprenda inglês no conforto da sua casa com aulas personalizadas e práticas!</p>
+                    <a href="#"><i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+        </div>
+     </section>
+
+    <!-- Sessão Footer -->
+      <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2025 Create By Porject | Grupo+</p>
+        </div>
+
+        <div class="footer-iconTop">
+            <a href="../index.html"><i class="bx bx-up-arrow-alt"></i></a>
+        </div>
+      </footer>
+
+    <!-- Scroll reveal -->
+     <script src="https://unpkg.com/scrollreveal"></script>
+
+     <!-- typed Js -->
+      <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <!-- LINK SCRIPT JS-->
+     <script src="js/script.js"></script>
+    <!-- LINK SCRIPT JS AND-->
+</body>
+</html>

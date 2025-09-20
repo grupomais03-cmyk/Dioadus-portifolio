@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- LINK CSS-->
-    <link rel="stylesheet" href="assets/css/style.css">
-    <!-- LINK CSS icons-->
-    <link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'>
-    <link rel="stylesheet" href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css'>
-    <!-- FavIcon -->
-    <link rel="shortcut icon" href="assets/img/favicon_io/favicon-16x16.png" type="image/x-icon">
-    <!-- Toastify js -->
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+      <!-- LINK CSS-->
+      <link rel="stylesheet" href="assets/css/style.css">
+      <!-- LINK CSS icons-->
+      <link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'>
+      <link rel="stylesheet" href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css'>
+      <!-- FavIcon -->
+      <link rel="shortcut icon" href="assets/img/favicon_io/favicon-16x16.png" type="image/x-icon">
+      <!-- Toastify js -->
+      <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <title>Dioadus</title>
 </head>
 <body>
@@ -19,7 +19,7 @@
     <!-- HEADER DESIGN-->
      <header class="header">
         <!--Logo da empresa-->
-        <a href="#" class="logo">Dioadus</a>
+        <a href="index.html" class="logo">Dioadus</a>
         <!-- Menu_icon-->
          <i class="bx bx-menu" id="menu-icon"></i>
         <!-- Menu-->
@@ -29,7 +29,7 @@
             <a href="#cursos">Cursos</a>
             <a href="#portifolio">Categoria</a>
             <a href="#contactos">Contactos</a>
-            <a href="#">Login</a>
+            <a href="assets/login.html">Login</a>
          </nav>
      </header>
 
@@ -46,7 +46,7 @@
                 <a href="#"><i class="fa-brands fa-tiktok"></i></a>
                 <a href="https://www.facebook.com/profile.php?id=100079353762742"><i class="bx bxl-facebook"></i></a>
             </div>
-            <a href="#" class="btn">Teste Seu Conhecimento Quizz.</a>
+            <a href="assets/quiz.html" class="btn">Teste Seu Conhecimento Quizz.</a>
         </div>
 
         <!-- IMG HOME-->
@@ -74,41 +74,44 @@
         <h2 class="heading">Nossos Cursos</h2>
 
         <div class="services-container">
-            <div class="services-box">
+            <div class="services-box produto" data-id="1" data-nome="A1 - Beginner´s  Level" data-preco="13.000,00 Kz" data-desc="Comece do zero e dê os primeiros passos no inglês!
+                    Curso Beginner: para quem quer aprender do básico.
+                    Aprenda a se apresentar, fazer perguntas e frases simples!">
                 <i class="fa-solid fa-book"></i>
                 <h3>Beginner´s Level</h3>
-                <p>Comece do zero e dê os primeiros passos no inglês!
-                    Curso Beginner: para quem quer aprender do básico.
-                    Aprenda a se apresentar, fazer perguntas e frases simples!</p>
-                
-                <a href="assets/cursos.html?curso=beginner_cursos" class="btn" id="beginner" >Cursar</a>
+                <p></p>
             </div>
 
-            <div class="services-box">
-               <i class="fa-solid fa-book-open"></i>
-                <h3>Pre-Elementary´s Level</h3>
-                <p>Dê o próximo passo no seu inglês!
+            <div class="services-box produto" data-id="2" data-nome="A2 - Elementary´s Level" data-preco="15.000,00 Kz" data-desc="Dê o próximo passo no seu inglês!
                     Curso Pre-Elementary: depois do básico, vem a evolução.
-                    Amplie vocabulário e monte frases mais completas!</p>
-                <a href="assets/cursos.html?curso=pre-elementary_cursos" class="btn">Cursar</a>
+                    Amplie vocabulário e monte frases mais completas!">
+               <i class="fa-solid fa-book-open"></i>
+                <h3>Elementary´s Level</h3>
+                <p></p>
             </div>
 
-            <div class="services-box">
-               <i class="fa-solid fa-book-open-reader"></i>
-               <h3>Elementary´s Level</h3>
-               <p>Chegou a hora de consolidar seu inglês!
+            <div class="services-box produto" data-id="3" data-nome="B1 - Intermediate Level" data-preco="18.000,00 Kz" data-desc="Chegou a hora de consolidar seu inglês!
                 Curso Elementary: para quem já tem noção básica.
-                Desenvolva diálogos mais longos e naturais!</p>
-                <a href="assets/cursos.html?curso=elementary_cursos" class="btn">Cursar</a>
+                Desenvolva diálogos mais longos e naturais!">
+               <i class="fa-solid fa-book-open-reader"></i>
+               <h3>Intermediate Level</h3>
+               <p></p>
             </div>
 
-            <div class="services-box">
+            <div class="services-box produto" data-id="4" data-nome="B2 - Upper Intermediate Level" data-preco="20.000,00 Kz" data-desc="O topo da sua jornada no inglês chegou!
+                    Curso Advanced: comunicação em alto nível.
+                    Converse com fluência e naturalidade em qualquer contexto!">
+               <i class="fa-solid fa-book-tanakh"></i>
+                <h3>Upper Intermediate</h3>
+                <p></p>
+            </div>
+
+            <div class="services-box produto" data-id="5" data-nome="C1 - Advanced´s Level" data-preco="23.000,00 Kz" data-desc="O topo da sua jornada no inglês chegou!
+                    Curso Advanced: comunicação em alto nível.
+                    Converse com fluência e naturalidade em qualquer contexto!">
                <i class="fa-solid fa-book-tanakh"></i>
                 <h3>Advanced´s Level</h3>
-                <p>O topo da sua jornada no inglês chegou!
-                    Curso Advanced: comunicação em alto nível.
-                    Converse com fluência e naturalidade em qualquer contexto!</p>
-                <a href="assets/cursos.html?curso=advanced_cursos" class="btn">Cursar</a>
+                <p></p>
             </div>
         </div>
      </section>
@@ -187,15 +190,14 @@
         <!-- toastify Js -->
          <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
         
-    <!-- LINK SCRIPT JS-->
-     <script src="assets/js/script.js"></script>
+         
+         <!-- LINK SCRIPT JS-->
+         <script src="assets/js/script.js"></script>
+         <!-- LINK SCRIPT JS-->
+          <script src="assets/js/cursos.js"></script>
     <!-- LINK SCRIPT JS AND-->
 </body>
 
 </html>
-
-
-
-
 
 

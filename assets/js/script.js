@@ -57,19 +57,6 @@ const typed = new Typed('.multiple-text', {
     loop: true
 })
 
-/** Links Cursos */
-window.addEventListener("DOMContentLoaded", () => {
-    const params = new URLSearchParams(window.location.search);
-    const curso = params.get("curso"); // ex: programacao
-    if (curso) {
-      const cursoSelecionado = document.getElementById(curso);
-      if (cursoSelecionado) {
-        cursoSelecionado.classList.add("destaque");
-        cursoSelecionado.scrollIntoView({ behavior: "smooth", block: "center" });
-      }
-    }
-});
-
 /** Finalizar compra no whatsapp */
 function enviarWhatsApp(curso) {
     // Substitua pelo número do seu WhatsApp (formato internacional, sem +, espaços ou traços)
@@ -134,3 +121,4 @@ document.getElementById("contactos_form").addEventListener("submit", function (e
         })
 
     })
+

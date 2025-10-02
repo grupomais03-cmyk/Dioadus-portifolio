@@ -566,7 +566,7 @@ body{
 
     /* QUIZ SECTION */
     .config-container-quiz {
-        margin-bottom: 20rem;
+        margin-bottom: 25px;
     }
     
     .quiz-section {
@@ -639,4 +639,5 @@ body{
         width: 300px;
     }
 }
+
 

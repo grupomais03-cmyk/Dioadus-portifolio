@@ -510,6 +510,7 @@ body{
 }
 
 @media(max-width: 365px){
+    
     .container-quiz {
         width: 300%;
     }
@@ -564,6 +565,10 @@ body{
     }
 
     /* QUIZ SECTION */
+    .config-container-quiz {
+        margin-bottom: 20rem;
+    }
+    
     .quiz-section {
         position: relative;
         left: -50%; 
@@ -634,3 +639,4 @@ body{
         width: 300px;
     }
 }
+

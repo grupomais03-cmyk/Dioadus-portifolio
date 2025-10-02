@@ -57,28 +57,39 @@ const showQuizResult = () => {
     quizContainer.style.display = "none";
     resultContainer.style.display = "block";
 
-    // PROGRESS CIRCULAR % TO RESULT QUIZ
     const circularProgress = document.querySelector('.circular-progress');
     const progressValue = document.querySelector('.process-value');
-    let progressStartValue = -1;
-    let progressEndValue = (correctAnswerCount / questions.length) * 100;
-    let speed = 20;
 
-    let progress = setInterval(() => {
-        progressStartValue++;
+    // Calcula % final com base no número de questões respondidas corretamente
+    const progressEndValue = (correctAnswerCount / numberOfQuestions) * 100;
 
-        progressValue.textContent = `${progressStartValue}%`;
-        circularProgress.style.background = `conic-gradient(blue ${progressStartValue * 3.6}deg, rgba(255, 255, 255, .1) 0deg)`;
+    let progressStartValue = 0;
 
-        if(progressStartValue == progressEndValue){
-            clearInterval(progress);
+    // Animação usando requestAnimationFrame
+    const animateProgress = () => {
+        if (progressStartValue < progressEndValue) {
+            progressStartValue += 0.5; // velocidade da animação (podes aumentar/diminuir)
+
+            progressValue.textContent = `${Math.floor(progressStartValue)}%`;
+            circularProgress.style.background = 
+                `conic-gradient(blue ${progressStartValue * 3.6}deg, rgba(255, 255, 255, .1) 0deg)`;
+
+            requestAnimationFrame(animateProgress);
+        } else {
+            // Garante que o valor final aparece certinho
+            progressValue.textContent = `${Math.round(progressEndValue)}%`;
+            circularProgress.style.background = 
+                `conic-gradient(blue ${progressEndValue * 3.6}deg, rgba(255, 255, 255, .1) 0deg)`;
         }
-    }, speed);
+    };
 
+    animateProgress();
+
+    // Texto final
     const resultText = `Your Score <b>${correctAnswerCount}</b> out of <b>${numberOfQuestions}</b> questions correctly. Great effort!`;
-
     document.querySelector(".score-text").innerHTML = resultText;
 }
+
 
 // CLEAR AND RESET THE TIMER
 const resetTimer = () => {
@@ -150,41 +161,66 @@ const handleAnswer = (option, answerIndex) => {
 };
 
 // RENDER THE CURRENT QUESTION AND ITS OPTIONS IN THE QUIZ 
+let shuffledQuestions = []; // nova lista embaralhada
+
+// Função para embaralhar
+const shuffleArray = (array) => {
+    return array
+        .map(value => ({ value, sort: Math.random() }))
+        .sort((a, b) => a.sort - b.sort)
+        .map(({ value }) => value);
+};
+
+// Quando o quiz começa
+const startQuiz = () => {
+    configContainerQuiz.style.display = "none";
+    quizContainer.style.display = "block";
+
+    quizCategory = configContainerQuiz.querySelector(".category-option-quiz.active").textContent;
+    numberOfQuestions = parseInt(configContainerQuiz.querySelector(".question-option-quiz.active").textContent);
+
+    // pega todas as perguntas da categoria e embaralha
+    const categoryQuestions = questions.find(
+        cat => cat.category.toLowerCase() === quizCategory.toLowerCase()
+    ).questions || [];
+
+    shuffledQuestions = shuffleArray(categoryQuestions).slice(0, numberOfQuestions);
+
+    rendeQuestion(); // inicia primeira
+};
+
+// getRandomQuestion agora vira apenas um "pega próxima"
+const getNextQuestion = () => {
+    if (questionsIndexHistory.length >= shuffledQuestions.length) {
+        return showQuizResult();
+    }
+    const nextQ = shuffledQuestions[questionsIndexHistory.length];
+    questionsIndexHistory.push(questionsIndexHistory.length); // marca posição
+    return nextQ;
+};
+
+// e no rendeQuestion troca a chamada
 const rendeQuestion = () => {
-    currentQuestion = getRandomQuestion();
+    currentQuestion = getNextQuestion();
     if(!currentQuestion) return;
 
     resetTimer();
     startTimer();
 
-    // UPDATE THE UI
     answerOptions.innerHTML = "";
     nextQuestionBtn.style.visibility = "hidden";
-    quizContainer.querySelector(".quiz-timer").style.background = "#32313C"
+    quizContainer.querySelector(".quiz-timer").style.background = "#32313C";
     document.querySelector(".question-text").textContent = currentQuestion.question;
     questionStatus.innerHTML = `<b>${questionsIndexHistory.length}</b> of <b>${numberOfQuestions}</b> Questions`;
 
-    // CREATE OPTION <li> ELEMENTS, APPEND THEM, AND ADD CLICK EVENT LISTENERS 
     currentQuestion.options.forEach((option, index) => {
         const li = document.createElement("li");
         li.classList.add("answer-option");
         li.textContent = option;
         answerOptions.appendChild(li);
-        li.addEventListener("click", () => handleAnswer(li, index))
+        li.addEventListener("click", () => handleAnswer(li, index));
     });
 };
-
-// START THE QUIZ AND RENDER THE RANDOM QUESTION
-const startQuiz = () => {
-    configContainerQuiz.style.display = "none";
-    quizContainer.style.display = "block";
-
-    // UPDATE THE QUIZ CATEGORY AND NUMBER OF QUESTION
-    quizCategory = configContainerQuiz.querySelector(".category-option-quiz.active").textContent;
-    numberOfQuestions = parseInt(configContainerQuiz.querySelector(".question-option-quiz.active").textContent);
-
-    rendeQuestion();
-}
 
 // HIGHLIGHT THE SELECTED OPTION ON CLICK - CATEGORY OR NO. OF QUESTION
 document.querySelectorAll(".category-option-quiz, .question-option-quiz").forEach(option => {
@@ -206,7 +242,4 @@ const resetQuiz = () => {
 nextQuestionBtn.addEventListener("click", rendeQuestion);
 document.querySelector(".tryAgain-btn").addEventListener("click", resetQuiz);
 document.querySelector(".goHome-btn").addEventListener("click", resetQuiz);
-
 document.querySelector(".start-quiz-btn").addEventListener("click", startQuiz);
-
-

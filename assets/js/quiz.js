@@ -61,7 +61,7 @@ const showQuizResult = () => {
     const circularProgress = document.querySelector('.circular-progress');
     const progressValue = document.querySelector('.process-value');
     let progressStartValue = -1;
-    let progressEndValue = (correctAnswerCount / questions.length) * 100;
+    let progressEndValue = (correctAnswerCount / numberOfQuestions) * 100;
     let speed = 20;
 
     let progress = setInterval(() => {
@@ -208,3 +208,4 @@ document.querySelector(".tryAgain-btn").addEventListener("click", resetQuiz);
 document.querySelector(".goHome-btn").addEventListener("click", resetQuiz);
 
 document.querySelector(".start-quiz-btn").addEventListener("click", startQuiz);
+

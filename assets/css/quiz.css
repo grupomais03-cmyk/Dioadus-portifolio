@@ -508,3 +508,129 @@ body{
         font-size: 1.4rem;
     }
 }
+
+@media(max-width: 365px){
+    .container-quiz {
+        width: 300%;
+    }
+
+    .home-content {
+        max-width: 250px;
+        justify-content: center;
+        align-items: center;
+        margin-right: 26%;
+    }
+
+    .home-content h1 {
+        font-size: 30px;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+    
+    .home-content p {
+        font-size: 14px;
+    }
+
+    .home-content .start-btn {
+        width: 150px;
+        height: 55px;
+        font-size: 14px;
+        letter-spacing: 2px;
+        font-weight: 600;
+    }
+
+    /* POPUP INFO */
+    .popup-info {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 250px;
+        padding: 15px 30px;
+    }
+
+    .popup-info h2 {
+        font-size: 30px;
+    }
+
+    .popup-info .info {
+        font-size: 13px;
+        font-weight: 500;
+    }
+    
+    .popup-info .btn-group .info-btn {
+        height: 30px;
+        font-size: 13px;
+        margin: 0 10px 0;
+    }
+
+    /* QUIZ SECTION */
+    .quiz-section {
+        position: relative;
+        left: -50%; 
+       /* left: 0;*/
+        width: 100%;
+        background: #02013d;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 100;
+        transition: .8s ease-in-out;
+        transition-delay: .25s;
+    }
+    
+    .quiz-section .voltar{
+        font-size: 18px;
+        font-weight: 600;
+        color: red;
+        cursor: pointer;
+        margin-right: 50rem;
+    }
+    
+    .quiz-section.active{
+        left: 0;
+    }
+    
+    :where(.config-container-quiz, .quiz-container, .result-container) {
+        display: none;
+        background: var(--text-color);
+        border-radius: 8px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.13);
+    }
+    
+    .quiz-section .config-container-quiz{
+        margin-right: 30%;
+        width: 260px;
+        padding: 25px;
+    }
+    
+    .config-container-quiz .config-quiz-title {
+        font-size: 37px;
+    }
+    
+    /* QUESTION QUIZ */
+    .quiz-container {
+        margin-right: 35.5%;
+    }
+
+    .quiz-container .quiz-title{
+        font-size: 18px;
+    }
+    
+    .quiz-container .question-text{
+        font-size: 18px;
+    }
+    
+    .quiz-container .answer-options{
+        font-size: 18px;
+    }
+
+    /* RESULT QUIZ */
+    .result-container {
+        margin-right: 30%;
+        width: 80%;
+    }
+
+    .result-container .percentage-container {
+        width: 300px;
+    }
+}

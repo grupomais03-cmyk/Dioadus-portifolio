@@ -7,29 +7,79 @@ const questions = [
         questions: [
             {
                 question: "Qual é a tradução corretapara 'Olá, como você está?' em  inglês?",
-                options:["A: Hello, what´s your name?","B: Hello, how are you?","C: Hello, what´s the weather like?","D: Hello, goodbye"
+                options:["A: Hello, what's your name?","B: Hello, how are you?","C: Hello, what's the weather like?","D: Hello, goodbye"
                 ],
-                correctAnswer: 1
+                correctAnswer: 1,
             },
             {
                 question: "Qual é a palavra certa para 'livro' em inglês?",
                 options: ["A: Book","B: Chair","C: Table","D: Car"],
-                correctAnswer: 0
+                correctAnswer: 0,
             },
             {
                 question: "Qual é a tradução correcta para 'Eu gosto de ler' em inglês",
                 options: ["A: I like to watch TV", "B: I like to read","C: I like to play sports","D: I like to eat"],
-                correctAnswer: 1
+                correctAnswer: 1,
             },
             {
                 question: "Qual é a palavra certa para 'amigo' em inglês?",
                 options: ["A: Family","B: Friend","C: Teacher","D: Student"],
-                correctAnswer: 1
+                correctAnswer: 1,
             },
             {
                 question: "Qual é a tradução correta para 'Eu estou bem' em inglês?",
-                options: ["A: I´m tired","B: I´m fine","C: I´m happy","D: I´m sad"],
-                correctAnswer: 1
+                options: ["A: I'm tired","B: I'm fine","C: I'm happy","D: I'm sad"],
+                correctAnswer: 1,
+            },
+            {
+                question: "Qual é a palavra certa para 'Casa' em inglês?",
+                options: ["A: House","B: Car","C: Tree","D: Dog"],
+                correctAnswer: 0,
+            },
+            {
+                question: "Qual é a tradução correta para 'Eu estou bem' em inglês?",
+                options: ["A: I'm tired","B: I'm fine","C: I'm happy","D: I'm sad"],
+                correctAnswer: 1,
+            },
+            {
+                question: "Qual é a palavra certa para 'Comida' em inglês?",
+                options: ["A: Food","B: Drink","C: Restaurant","D: Kitchen"],
+                correctAnswer: 0,
+            },
+            {
+                question: "Qual é a palavra correta para 'Eu gosoto de música' em inglês?",
+                options: ["A: I like music","B: I like sports","C: I like reading","D: I like dancing"],
+                correctAnswer: 0,
+            },
+            {
+                question: "Qual é a palavra certa para 'Escola' em inglês",
+                options: ["A: School","B: University","C: Library","D: Office"],
+                correctAnswer: 0,
+            },
+            {
+                question: "Qual é atradução correta para 'Eu estou estudando inglês' em inglês?",
+                options: ["A: I'm studying math","B: I'm studying English","C: I'm studying science","D: I'm studying history"],
+                correctAnswer: 1,
+            },
+            {
+                question: "Qual é a palavra certa para 'férias' em inglês?",
+                options: ["A: Vacation","B: Holiday","C: Weekend","D: Both A and B"],
+                correctAnswer: 3,
+            },
+            {
+                question: "Qual é a tradução correta para 'Eu estou cansado' em inglês?",
+                options: ["A: I'm happy","B: I'm tired","C: I'm hungry","D: I'm thirsty"],
+                correctAnswer: 1,
+            },
+            {
+                question: "Qual é a palavra certa para 'amizade' em inglês?",
+                options: ["A: Friendship","B: Love","C: Family","D: Relationship"],
+                correctAnswer: 0,
+            },
+            {
+                question: "Qual é a tradução correta para 'Eu estou feliz' em inglês?",
+                options: ["A: I'm sad","B: I'm happy","C: I'm tired","D: I'm angry"],
+                correctAnswer: 1,
             }
         ]
     },
@@ -58,7 +108,7 @@ const questions = [
             },
             {
                 question: "Qual é a tradução correta para 'Eu estou estudando inglês' em inglês?",
-                options: ["A: I´m studying math","B: I´m studying English","C: I´m studying science","D: I´m studying history"],
+                options: ["A: I'm studying math","B: I'm studying English","C: I'm studying science","D: I'm studying history"],
                 correctAnswer: 1,
             }
         ]
@@ -68,7 +118,7 @@ const questions = [
         questions: [
             {
                 question: "Qual é a tradução correta para 'Eu estou procurando um emprego' em inglês?",
-                options: ["A: I´m lokking for a job","B: I´m lokking for a house","C: I´m lokking for a car","D: I´m lokking for a friend"],
+                options: ["A: I'm lokking for a job","B: I'm lokking for a house","C: I'm lokking for a car","D: I'm lokking for a friend"],
                 correctAnswer: 0,
             },
             {
@@ -78,7 +128,7 @@ const questions = [
             },
             {
                 question: "Qual é a tradução correta para 'Eu estou cansado' em inglês?",
-                options: ["A: I´m happy","B: I´m tired","C: I´m hungry","D: I´m thisty"],
+                options: ["A: I'm happy","B: I'm tired","C: I'm hungry","D: I'm thisty"],
                 correctAnswer: 1,
             },
             {
@@ -88,7 +138,7 @@ const questions = [
             },
             {
                 question: "Qual é a tradução correta para 'Eu estou planejando uma viagem' em inglês?",
-                options: ["A: I´m planning a trip","B: I´m planning a party","C: I´m planning a meeting","D: I´m planning a project"],
+                options: ["A: I'm planning a trip","B: I'm planning a party","C: I'm planning a meeting","D: I'm planning a project"],
                 correctAnswer: 0,
             }
             
@@ -109,7 +159,7 @@ const questions = [
             },
             {
                 question: "Qual é a tradução correta para 'Eu estou preocupado com o meio ambiente' em inglês?",
-                ooptions: ["A: I´m concerned about the environment","B: I´m not concerned about the environment","C: I´m concerned about the politics","D: I´m concerned about economy"],
+                ooptions: ["A: I'm concerned about the environment","B: I'm not concerned about the environment","C: I'm concerned about the politics","D: I'm concerned about economy"],
                 correctAnswer: 0,
             },
             {

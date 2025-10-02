@@ -46,7 +46,7 @@ const QUIZ_TIME_LIMIT = 30;
 let currentTime = QUIZ_TIME_LIMIT;
 let timer = null;
 let quizCategory = "Beginner Level";
-let numberOfQuestions = 5;
+let numberOfQuestions = 15;
 let currentQuestion = null;
 const questionsIndexHistory = [];
 
@@ -206,4 +206,5 @@ const resetQuiz = () => {
 nextQuestionBtn.addEventListener("click", rendeQuestion);
 document.querySelector(".tryAgain-btn").addEventListener("click", resetQuiz);
 document.querySelector(".goHome-btn").addEventListener("click", resetQuiz);
+
 document.querySelector(".start-quiz-btn").addEventListener("click", startQuiz);

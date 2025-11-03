@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- LINK CSS-->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- LINK CSS icons-->
+     <link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'>
+     <link rel="stylesheet" href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css'>
+    <title>Dioadus</title>
+</head>
+<body>
+    
+    <!-- HEADER DESIGN-->
+     <header class="header">
+        <!--Logo da empresa-->
+        <a href="../index.html" class="logo">Dioadus</a>
+        <!-- Menu_icon-->
+         <i class="bx bx-menu" id="menu-icon"></i>
+        <!-- Menu-->
+         <nav class="navbar">
+            <a href="../index.html" class="active">Home</a>
+            <a href="sobre_nos.html">Sobre Nós</a>
+            <a href="#cursos">Cursos</a>
+            <a href="#">Login</a>
+         </nav>
+     </header>
+
+     <!-- Cursos -->
+      <section class="cursos" id="nossos_cursos">
+        <div id="beginner-cursos" class="curso">
+            <div class="cursos-img">
+                <img src="img/Beginner.png" alt="">
+            </div>
+
+            <div class="cursos-content">
+                <h2 class="heading">Beginner</h2>
+                <h3>Teacher <span>Dianduala Agostinho António</span></h3>
+                <p>Ideal para quem está começando do zero. O curso Beginner oferece as bases essenciais do idioma de forma prática e descontraída. 
+                    Com aulas 100% online, você terá acesso a conteúdos dinâmicos, três vezes por semana, nos turnos manhã, tarde ou noite, conforme sua disponibilidade. 
+                    A duração é de 1 ano, garantindo evolução constante no aprendizado.</p>
+                <button onclick="enviarWhatsApp('Beginner´s Level')" class="btn">Aderir</button>
+            </div>
+        </div>
+        <div id="pre-elementary-cursos" class="curso">
+            <div class="cursos-img">
+                <img src="img/Pre-Elementary.png" alt="">
+            </div>
+
+            <div class="cursos-content">
+                <h2 class="heading">Pre-Elementary´s Level</h2>
+                <h3>Teacher <span>Dianduala Agostinho António</span></h3>
+                <p>Perfeito para quem já tem um contato inicial com o idioma e deseja ganhar mais confiança na comunicação. 
+                    O Pre-Elementary ajuda você a expandir vocabulário, melhorar a pronúncia e compreender frases do dia a dia. 
+                    As aulas acontecem online, três vezes por semana, com horários flexíveis (manhã, tarde ou noite), durante 1 ano de acompanhamento contínuo.
+                </p>
+                <button onclick="enviarWhatsApp('Pré-Elementary Level')" class="btn">Aderir</button>
+            </div>
+        </div>
+
+        <div id="elementary-cursos" class="curso">
+            <div class="cursos-img">
+                <img src="img/Elementary.png" alt="">
+            </div>
+
+            <div class="cursos-content">
+                <h2 class="heading">Elementary´s Level</h2>
+                <h3>Teacher <span>Dianduala Agostinho António</span></h3>
+                <p>Indicado para alunos que já entendem noções básicas e querem avançar para uma comunicação mais estruturada. 
+                    No curso Elementary, você desenvolve habilidades para conversas simples, leitura de textos curtos e melhor compreensão auditiva. 
+                    São aulas online, três vezes por semana, disponíveis em diferentes turnos (manhã, tarde e noite) ao longo de 1 ano de estudo.
+                </p>
+                <button onclick="enviarWhatsApp('Elementary Level')" class="btn">Aderir</button>
+            </div>
+        </div>
+        
+        <div id="advanced-cursos" class="curso">
+            <div class="cursos-img">
+                <img src="img/Advanced.png" alt="">
+            </div>
+
+            <div class="cursos-content">
+                <h2 class="heading">Advanced´s Level</h2>
+                <h3>Teacher <span>Dianduala Agostinho António</span></h3>
+                <p>Voltado para quem deseja atingir um alto nível de fluência. 
+                    O curso Advanced foca em aprofundar a comunicação oral e escrita, ampliar o vocabulário e desenvolver a compreensão de conteúdos complexos.
+                    As aulas são 100% online, realizadas três vezes por semana, nos turnos manhã, tarde ou noite, com duração de 1 ano.
+                </p>
+                <button onclick="enviarWhatsApp('Advanced´s Level')" class="btn">Aderir</button>
+            </div>
+        </div>
+     </section>
+
+     <!--Sessão Cursos Design-->
+     <section class="services-cursos" id="cursos">
+        <h2 class="heading">Nossos Cursos</h2>
+
+        <div class="services-cursos-container">
+            <div class="services-cursos-box">
+               <i class="fa-solid fa-book-open"></i>
+                <h3>Pre-Elementary´s Level</h3>
+                <p>Dê o próximo passo no seu inglês!
+                    Curso Pre-Elementary: depois do básico, vem a evolução.
+                    Amplie vocabulário e monte frases mais completas!</p>
+                <a href="cursos.html?curso=pre-elementary" class="btn">Cursar</a>
+            </div>
+
+            <div class="services-cursos-box">
+               <i class="fa-solid fa-book-open-reader"></i>
+               <h3>Elementary´s Level</h3>
+               <p>Chegou a hora de consolidar seu inglês!
+                Curso Elementary: para quem já tem noção básica.
+                Desenvolva diálogos mais longos e naturais!</p>
+                <a href="cursos.html?curso=elementary" class="btn">Cursar</a>
+            </div>
+
+            <div class="services-cursos-box">
+               <i class="fa-solid fa-book-tanakh"></i>
+                <h3>Advanced´s Level</h3>
+                <p>O topo da sua jornada no inglês chegou!
+                    Curso Advanced: comunicação em alto nível.
+                    Converse com fluência e naturalidade em qualquer contexto!</p>
+                <a href="cursos.html?curso=advanced" class="btn">Cursar</a>
+            </div>
+        </div>
+     </section>
+
+    <!-- Nossas Aulas -->
+     <section class="categoria" id="portifolio">
+        <h2 class="heading">Nossa Categoria de Aulas</h2>
+
+        <div class="categoria-container">
+            <div class="categoria-box">
+                <img src="img/3.png" alt="">
+                <div class="categoria-layer">
+                    <h4>Aulas Online</h4>
+                    <p>Aprenda inglês online com flexibilidade, praticidade e foco na sua fluência!</p>
+                    <a href="#"><i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+            <div class="categoria-box">
+                <img src="img/3.png" alt="">
+                <div class="categoria-layer">
+                    <h4>Aulas Domicíliar</h4>
+                    <p>Aprenda inglês no conforto da sua casa com aulas personalizadas e práticas!</p>
+                    <a href="#"><i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+        </div>
+     </section>
+
+    <!-- Sessão Footer -->
+      <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2025 Create By Porject | Grupo+</p>
+        </div>
+
+        <div class="footer-iconTop">
+            <a href="../index.html"><i class="bx bx-up-arrow-alt"></i></a>
+        </div>
+      </footer>
+
+    <!-- Scroll reveal -->
+     <script src="https://unpkg.com/scrollreveal"></script>
+
+     <!-- typed Js -->
+      <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <!-- LINK SCRIPT JS-->
+     <script src="js/script.js"></script>
+    <!-- LINK SCRIPT JS AND-->
+</body>
+
+</html>
+
+
+
+

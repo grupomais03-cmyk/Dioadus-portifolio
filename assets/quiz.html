@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- LINK CSS-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/quiz.css">
+    <!-- LINK CSS icons-->
+    <link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'>
+    <link rel="stylesheet" href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css'>
+    <!-- FavIcon -->
+    <link rel="shortcut icon" href="img/favicon_io/favicon-16x16.png" type="image/x-icon">
+    <!-- Toastify js -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <!-- LINKING GOOGLE FONTS ICON-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounted:opsz,wght,FILL,GRAD@24,400,0,0">
+    <title>Dioadus</title>
+</head>
+
+<body>
+
+    <!-- HEADER DESIGN-->
+    <main class="main">
+        <header class="header">
+            <!--Logo da empresa-->
+            <a href="../index.html" class="logo">Dioadus</a>
+            <!-- Menu_icon-->
+            <i class="bx bx-menu" id="menu-icon"></i>
+            <!-- Menu-->
+            <nav class="navbar">
+                <a href="../index.html" class="active">Home</a>
+                <a href="sobre_nos.html">Sobre Nós</a>
+                <a href="../index.html#cursos">Cursos</a>
+                <a href="../index.html#portifolio">Categoria</a>
+                <a href="../index.html#contactos">Contactos</a>
+                <a href="login.html">Login</a>
+            </nav>
+        </header>
+
+     <!--Sessaõ Quiz Design-->
+        <div class="container-quiz">
+            <!-- Quiz configuration Container -->
+            <section class="quiz-section">
+                <div class="config-container-quiz">
+                    <span class="voltar">X</span>
+                    <h2 class="config-quiz-title">Quiz Confiuration</h2>
+
+                    <div class="config-quiz-option">
+                        <h4 class="option-quiz-title">Select Category</h4>
+                        <div class="category-quiz-options">
+                            <button class="category-option-quiz active">Beginner Level</button>
+                            <button class="category-option-quiz">Elementary Level</button>
+                            <button class="category-option-quiz">Intermediate Level</button>
+                            <button class="category-option-quiz">Upper Intermediate Level</button>
+                            <button class="category-option-quiz">Advanced Level</button>
+                        </div>
+                    </div>
+                   
+                    <div class="config-quiz-option">
+                        <h4 class="option-quiz-title">No. of Questions</h4>
+                        <div class="question-quiz-options">
+                            <button class="question-option-quiz active">15</button>
+                            <button class="question-option-quiz">5</button>
+                            <button class="question-option-quiz">5</button>
+                            <button class="question-option-quiz">5</button>
+                            <button class="question-option-quiz">5</button>
+                        </div>
+                    </div>
+
+                    <button class="start-quiz-btn">Start Quiz</button>
+                </div>
+
+                <!-- QUIZ CONTAINER -->
+                 <div class="quiz-container">
+                    <header class="quiz-header">
+                        <h2 class="quiz-title">Quiz Aplication</h2>
+                        <div class="quiz-timer">
+                            <span class="materil-symbols-rounded">timer</span>
+                            <p class="time-duration">15s</p>
+                        </div>
+                    </header>
+
+                    <div class="quiz-content">
+                        <h1 class="question-text"></h1>
+                        <ul class="answer-options"></ul>
+                    </div>
+
+                    <div class="quiz-footer">
+                        <p class="question-status"></p>
+                        <button class="next-question-btn">
+                            Next
+                            
+                        </button>
+                    </div>
+                 </div>
+
+                <!-- RESULT CONTAINER -->
+                 <div class="result-container">
+                    <h2>Quiz Result!</h2>
+                    <div class="percentage-container">
+                        <div class="circular-progress">
+                            <span class="process-value">0%</span>
+                        </div>
+
+                        <span class="score-text"></span>
+                    </div>
+
+                    <div class="buttons">
+                        <button class="tryAgain-btn">Try Again</button>
+                        <button class="goHome-btn">Go To Home</button>
+                    </div>
+                 </div>
+
+            </section>
+
+            <section class="home">
+                <div class="home-content">
+                    <h1>Welcome to Quiz</h1>
+                    <p>Prepare-se para testar seus conhecimentos de inglês de forma divertida e desafiadora! O Welcome
+                        to Quiz é um quiz interativo projetado para estudantes de inglês de todos os niveis, desde
+                        iniciantes até avançados.</p>
+                    <button class="start-btn">Vamos Começar</button>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!--Sessaõ Quiz popup-info Design-->
+    <div class="popup-info">
+        <h2>Quiz Guide</h2>
+        <span class="info">
+            <h3>O que você pode esperar:</h3>
+            <li>Perguntas desafiadoras sobre gramática, vocabulário e compreensão de texto</li>
+            <li>Oportunidade de aprender e melhorar suas habilidades em inglês</li>
+            <li>Uma experiência divertida e interativa para testar seus conhecimentos</li>
+        </span>
+        <span class="info">
+            <h3>Participe e descubra:</h3>
+            <li>Quão bom você conhece a língua inglesa</li>
+            <li>Quais são as suas forças e fraquezas</li>
+            <li>Como você pode melhorar suas habilidades em inglês</li>
+        </span>
+
+        <div class="btn-group">
+            <button class="info-btn exit-btn">Exit Quiz</button>
+            <a href="#" class="info-btn continue-btn">Continuar</a>
+        </div>
+    </div>
+
+    <!-- Sessão Footer -->
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2025 Create By Porject | Grupo+</p>
+        </div>
+
+        <div class="footer-iconTop">
+            <a href="../index.html#home"><i class="bx bx-up-arrow-alt"></i></a>
+        </div>
+    </footer>
+
+    <!-- Scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- form emailJs -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <!-- typed Js -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <!-- toastify Js -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+
+    <!-- LINK SCRIPT JS-->
+    <script src="js/script.js"></script>
+    <!-- LINK SCRIPT CURSO JS-->
+    <script src="js/questions.js"></script>
+    <script src="js/quiz.js"></script>
+    <!-- LINK SCRIPT JS AND-->
+</body>
+
+</html>
